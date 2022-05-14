@@ -32,6 +32,7 @@ function getBeer(resetArray = false) {
         .then((response) => response.json())
         .then(beers => {
             beerData = resetArray ? beers : [...beerData, ...beers];
+            input.value = '';
             beerRender();
         });
 
