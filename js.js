@@ -35,7 +35,6 @@ function getBeer(resetArray = false) {
             input.value = '';
             beerRender();
         });
-
 }
 
 function searchName() {
